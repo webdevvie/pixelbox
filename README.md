@@ -67,6 +67,7 @@ Future features?
 - Add a game of life game
 - Add a microphone for party mode
 - Add a party mode
+- Better design for the case with clips to hook on the acrylic
 
 Parts
 =====
