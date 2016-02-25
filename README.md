@@ -32,17 +32,23 @@ Making this thing yourself is a nice project.
 But please buy a gameframe instead! It is much better looking than this DIY thing and it has more features.
 https://ledseq.com/product/game-frame/
 
-So you have been warned. No warranty. You are on your own.
-(Besides this readme.md ofc)
-
-Also: Please don't make these and sell em on ebay... don't be a dick.
 
 All the code, circuit design, and arduinocode in this project have been made by me.
 I used some examples by Adafruit and other Arduino samples to learn how to read the SD card.
+I already had knowledge of addressing the pixels. The arduino code uses the Neopixel,SPI,SdFat,Adafruit_GFX, Adafruit_NeoMatrix libraries.
+Though the last two are just there so I can use them in later revisions.
+
+
+
 If you change the code,designs please be sure to submit a pull request of your fork.
 
 THIS IS A WORK IN PROGRESS
 ==========================
+So you have been warned. No warranty. You are on your own.
+(Besides this readme.md ofc)
+
+Also: Please don't make these and sell em on ebay... don't be a dick. K?
+
 
 
 Features
@@ -69,11 +75,13 @@ Electronics
  - flat cable wire
  - A capacitor (1000μf 10v)
  - a 16x16 5v WS2812B (neopixel like) grid of ebay for $50-$120 (16x16 WS2812B RGB LED Matrix Panel, 256 Individually Addressable Pixels, 5v)
+ - OR https://www.adafruit.com/products/2547
+ - OR 4 pieces of 8x8 neopixel board soldered together. But you may have to change the grid, and printed parts a bit to make them fit properly.
  - Pins
  - Wire plug crimper and plugs
  - arduino headers
  - FTDI serial connector to program the arduino pro mini
- - a 3A 5v power supply
+ - a 3A 5v power supply (this should be enough as all the pixels are just at 30% of their actual value otherwise things start to melt)
  - 2 buttons that fit the 3d printed parts
  - 1 resistor 220 ohm
  - 1 barrel jack for the power supply
