@@ -27,5 +27,5 @@ fi
 mkdir -p $BASEPATH/tmp
 rm -f $BASEPATH/tmp/*.png
 convert $1  -coalesce -filter Point -distort Resize 16x16 $BASEPATH/tmp/anim000_fr%03d.png
-rm -f $BASEPATH/tmp/*.png
 php $BASEPATH/convert-to-pixelboxfile.php 0 $2 $3 $BASEPATH/tmp/ $4
+rm -f $BASEPATH/tmp/*.png

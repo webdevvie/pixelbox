@@ -28,7 +28,9 @@ if($delay == 0)
     $delay = 10;
 }
 foreach (glob($argv[1]."*.gif") as $filename) {
-    echo "$filename size " . filesize($filename) . "\n";
-    exec(__DIR__."/convertgif.sh ".$filename." ".$loops." ".$delay." ".$argv[2].sprintf($pattern,$nr));
+    echo "\n$filename size " . filesize($filename) . "\n";
+    $command = __DIR__."/convertgif.sh ".$filename." ".$loops." ".$delay." ".$argv[2].sprintf($pattern,$nr);
+    //echo "\nExecuting:".$command."\n";
+    shell_exec($command);
 	$nr++;
 }

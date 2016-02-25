@@ -1,5 +1,8 @@
 DIY PIXELBOX
 ============
+
+![Everything hooked up][pixelbox]
+
 This is a project I started after seeing the Gameframe and missing out on the kickstarter.
 This project is here for educational purposes only.
 This is a simple board, simple code and really nothing at all at the quality of an actual Gameframe!
@@ -98,6 +101,9 @@ To keep the box upright you may want to print some feet :
 
 print this one twice. You need to drill a hole to fit your screws
 
+
+
+
 Soldering the circuitboard
 ==========================
 See this video: [TODO ADD A VIDEO]
@@ -122,15 +128,71 @@ You can see some photos of my circuitboard here:
 
 ![Everything hooked up][circuit2]
 
-[circuit1]: images/circuit1.jpg "The circuit 2"
-[circuit2]: images/circuit2.jpg "The circuit 2"
+
 
 
 Arduino code
 ============
 Load the code from the `arduino-sourcecode/Pixelbox/Pixelbox.ino` onto your arduino without it attached to the board.
 
-If each line is flipped on your box ,
+If each line is flipped on your box. You might have a different pixel grid than i have. In the sourcecode change this:
+
+`byte mode = 1;`
+
+to
+
+`byte mode = 0;`
+
+
+Putting it together
+===================
+Before putting it together, test the circuitry. See if the pixels light up correctly.
+
+Cut 2 pieces of Acrylic glass exactly the size of the box. Leave the protective plastic on. this will prevent scratches  Drill holes in the pieces the same spots they are on the box. (the 4 corners)
+
+Put the 4 screws in the first sheet of acrylic , leave the outside piece of protective plastic on, but remove the back piece.
+
+Cut a piece of paper exactly the same size as the acrylic.
+Put holes in the same spots as the acrylic, and slide it over the screws onto the acrylic.
+
+Now put the outside parts (glued) together.
+
+Put in the buttons, (Which you should have already soldered to wires and plug to) and hotglue them to the frame.
+
+Remove any droops and wires of the hot glue before proceeding.
+
+Put the outside frame over the screws and make sure it is a snug fit. Remove any inperfections causing a bad fit.
+
+Cut the circular pieces off the printed 16x16 grid. file or sand them down if if you have to. You can try glueing them.
+But they should just fit inside the box against the paper.
+Make sure you have the smooth side (from the kapton tape) down on the paper.
+
+Grab your neopixel grid, and decide which side is up. Put the input wire on that side top left corner (looking from the back)
+and let the grid fall into place.
+
+Now put together the backside pressure parts (They should fit together using the holes in the pieces) and put the single piece pointing up to the buttons.
+
+Now , drill some holes big enough for the connectors of the pixel grid and the buttons to pass through into the back acrylic.
+
+Remove both sides of the
+Use some double sided tape or other means to attach the board to the back of the acrylic with the holes.
+Or drill holes in the acrylic and use screws in the permaproto board.
+Make sure it is in a place where there is enough space for the power supply connector and not too far from the grid & button connectors.
+
+Put the back acrylic piece with the board on the back end.
+
+Put on the nuts and tighten them. Put the stands on the bottom screws (After drilling holes in the stands where the screws fit.)
+
+Hook up your sd card filled with animations, and the power supply.
+
+Now it has turned on it is displaying a wonderful animation. YAY!
+
+Use the buttons to either fix on a single animation or switch to the next animation.
+
+Alternate version
+-----------------
+You can also try fitting the electronics in a smaller permaproto board.then put it inside the space between the back pressure parts.
+This will however prevent you from taking the expensiver parts off the board for an upgraded version later...
 
 Image converter
 ===============
@@ -179,7 +241,6 @@ Run this command:
  - Delay: This is in 10ms (so take the delay between frames in MS and divide it by 10 and round to whole numbers)
  - Loops: The loop count of the animation
 
-
 Putting the files on the SD card
 --------------------------------
 Make sure the sd card is formatted MS-DOS FAT16
@@ -194,6 +255,22 @@ etc.
 
 Put them in the root dir of the sd card.
 
+Be sure to clear the sd card of osx bull poop.
+
+Go to the sd card mount point ( On mac this is /Volumes/SDCARDNAMEHERE/ ) and run :
+
+`cd /Volumes/SDCARDNAMEHERE/`
+
+`rm -fr .Spotlight-V100/ .Trashes/ ._.Trashes .fseventsd`
+
+to clear out stuff osx puts there.
+
+(this is important!)
+
+
+Sample images
+=============
+You can take the sample_sd directory and put its contents on the SD card. These will work
 
 What else?
 ==========
@@ -208,4 +285,6 @@ The end
 =======
 
 
-
+[pixelbox]: docimages/pixelbox.jpg "The pixelbox"
+[circuit1]: docimages/circuit1.jpg "The circuit 2"
+[circuit2]: docimages/circuit2.jpg "The circuit 2"

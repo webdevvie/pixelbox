@@ -26,13 +26,17 @@ function processAnim($animation, $loops, $delay, $sourcepath, $outfile)
     $out = '';
     $frameFile = sprintf('anim%03d_fr%03d.png', $animation, $nr);
     while (file_exists($sourcepath . $frameFile)) {
+        //echo "\n";
         $img = @imagecreatefrompng($sourcepath . $frameFile);
         for ($y = 0; $y < $maxY; $y++) {
             for ($x = 0; $x < $maxX; $x++) {
                 $rgb = imagecolorat($img, $x, $y);
                 $colors = imagecolorsforindex($img, $rgb);
                 $out .= chr($colors['red']) . chr($colors['green']) . chr($colors['blue']);
+
+                //echo sprintf("%03d",$colors['red']);
             }
+            //echo "\n";
         }
         imagedestroy($img);
         $nr++;

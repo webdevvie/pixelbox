@@ -37,10 +37,9 @@ SdFile file;
 
 // mode 0 is (next row starts at 0)
 // mode 1 is next row starts below the last pixel
-int lb=0;
 byte mode = 1;
 
-
+int lb=0;
 byte displayMode=0;
 boolean breakAnim=false;
 boolean autoadvance=true;
