@@ -58,7 +58,15 @@ Features
 - Toggle between animations using the buttons
 - Use one button to switch between animations and the other to pause the skipping to the next into a manual skip mode.
 
+Future features?
+================
 
+- Serial connectivity
+- Add a clock (with a hardware clock)
+- Add more buttons and more functionality
+- Add a game of life game
+- Add a microphone for party mode
+- Add a party mode
 
 Parts
 =====
@@ -96,7 +104,7 @@ You will also require these things:
  - Acrylic glass
  - A drill
  - Acrylic cutter
- - a4 or letter size paper to diffuse the light
+ - a4 or letter size paper to diffuse the light from the leds
 
 
 
