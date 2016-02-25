@@ -1,3 +1,22 @@
+Pixelbox
+========
+Copyright (C) 2016  John Bakker
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+I'm [@webdevvie](http://twitter.com/webdevvie) on twitter and also reachable at [my site](http://www.johnbakker.name/)
+
 DIY PIXELBOX
 ============
 
@@ -8,16 +27,32 @@ This project is here for educational purposes only.
 This is a simple board, simple code and really nothing at all at the quality of an actual Gameframe!
 But maybe a nice project to learn some arduino,electronics and 3d printing!
 
-Making this thing yourself is a nice project. But please buy a gameframe instead! It probably is much better than this DIY thing.
+Making this thing yourself is a nice project.
+
+But please buy a gameframe instead! It is much better looking than this DIY thing and it has more features.
 https://ledseq.com/product/game-frame/
 
 So you have been warned. No warranty. You are on your own.
-(Besides this readme ofc)
+(Besides this readme.md ofc)
 
 Also: Please don't make these and sell em on ebay... don't be a dick.
 
+All the code, circuit design, and arduinocode in this project have been made by me.
+I used some examples by Adafruit and other Arduino samples to learn how to read the SD card.
+If you change the code,designs please be sure to submit a pull request of your fork.
+
 THIS IS A WORK IN PROGRESS
 ==========================
+
+
+Features
+========
+
+- Display animations taken from animated gifs taken from the internets.
+- Toggle between animations using the buttons
+- Use one button to switch between animations and the other to pause the skipping to the next into a manual skip mode.
+
+
 
 Parts
 =====
@@ -106,7 +141,8 @@ print this one twice. You need to drill a hole to fit your screws
 
 Soldering the circuitboard
 ==========================
-See this video: [TODO ADD A VIDEO]
+
+See Circuitboard design below. I will record a video to go over the circuitboard soon and put it here.
 
  - Put the headers and pins like shown in the Circuitboard chapter below)
  - Link the data pin of the grid to pin 6 of the arduino
@@ -279,10 +315,9 @@ Put your sd card in the reader. And make sure all your wiring is good. Hook it u
 Liked this project? Or have feedback
 ====================================
 
-I'm [@webdevvie](http://twitter.com/webdevvie) and reachable at [my site](http://www.johnbakker.name/)
+I'm [@webdevvie](http://twitter.com/webdevvie) on twitter and also reachable at [my site](http://www.johnbakker.name/)
 
-The end
-=======
+
 
 
 [pixelbox]: docimages/pixelbox.jpg "The pixelbox"
