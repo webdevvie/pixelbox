@@ -159,7 +159,7 @@ print this one twice. You need to drill a hole to fit your screws
 Soldering the circuitboard
 ==========================
 
-See Circuitboard design below. I will record a video to go over the circuitboard soon and put it here.
+See Circuitboard design below. [This is me talking about the circuit!](https://youtu.be/n6ovq325_dE)
 
  - Put the headers and pins like shown in the Circuitboard chapter below)
  - Link the data pin of the grid to pin 6 of the arduino
