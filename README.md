@@ -201,6 +201,8 @@ Putting it together
 ===================
 Before putting it together, test the circuitry. See if the pixels light up correctly.
 
+[Video of me putting together a pixelbox](https://youtu.be/9MHOloE85uM)
+
 Cut 2 pieces of Acrylic glass exactly the size of the box. Leave the protective plastic on. this will prevent scratches  Drill holes in the pieces the same spots they are on the box. (the 4 corners)
 
 Put the 4 screws in the first sheet of acrylic , leave the outside piece of protective plastic on, but remove the back piece.
