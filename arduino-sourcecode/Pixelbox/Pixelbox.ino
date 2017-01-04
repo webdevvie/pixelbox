@@ -259,7 +259,7 @@ int stringToInt(String inp)
 }
 
 String splitString(String s, char parser,int index){
-  String rs='\0';
+  String rs="\0";
   int parserIndex = index;
   int parserCnt=0;
   int rFromIndex=0, rToIndex=-1;
@@ -270,7 +270,7 @@ String splitString(String s, char parser,int index){
 
     if(index == parserCnt){
       if(rToIndex == 0 || rToIndex == -1){
-        return '\0';
+        return "\0";
       }
       return s.substring(rFromIndex,rToIndex);
     }
